@@ -1,0 +1,10 @@
+Brian - GUI/Planning UML, Project Lead
+Miguel M - Data Storage Lead Programmer
+Miguel E - Functionality development/Tester
+Monico - Functionality development/Tester
+Juan - Functionality development/Tester, Lead Programmers
+
+Blackboard-like application
+
+Database - SQL
+General Development - C++
