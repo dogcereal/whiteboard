@@ -1,0 +1,24 @@
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.Cache
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.Form2.resources
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.Form2.resources
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.Cache
