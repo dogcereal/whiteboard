@@ -12,9 +12,19 @@
     End Sub
 
     Private Sub LoginBttn_Click(sender As Object, e As EventArgs) Handles LoginBttn.Click
-        If (Usr.Text = "admin" And Psswrd.Text = "admin") Then
-            Form2.Show()
+        If (Usr.Text = "student" And Psswrd.Text = "password") Then
+            Student.Show()
             Me.Hide()
+            Usr.Clear()
+            Psswrd.Clear()
+            Usr.Select()
+
+        ElseIf (Usr.Text = "professor" And Psswrd.Text = "password") Then
+            Professor.Show()
+            Me.Hide()
+            Usr.Clear()
+            Psswrd.Clear()
+            Usr.Select()
 
         Else
             MessageBox.Show("Invalid Username or Password")

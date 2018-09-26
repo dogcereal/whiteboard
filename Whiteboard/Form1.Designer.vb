@@ -35,7 +35,7 @@ Partial Class Login
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Stencil", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(115, 18)
+        Me.Label1.Location = New System.Drawing.Point(110, 18)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(474, 80)
         Me.Label1.TabIndex = 0
@@ -78,7 +78,7 @@ Partial Class Login
         '
         'LoginBttn
         '
-        Me.LoginBttn.Location = New System.Drawing.Point(240, 207)
+        Me.LoginBttn.Location = New System.Drawing.Point(261, 207)
         Me.LoginBttn.Name = "LoginBttn"
         Me.LoginBttn.Size = New System.Drawing.Size(100, 46)
         Me.LoginBttn.TabIndex = 5
@@ -87,7 +87,7 @@ Partial Class Login
         '
         'ExitBttn
         '
-        Me.ExitBttn.Location = New System.Drawing.Point(390, 207)
+        Me.ExitBttn.Location = New System.Drawing.Point(376, 207)
         Me.ExitBttn.Name = "ExitBttn"
         Me.ExitBttn.Size = New System.Drawing.Size(100, 46)
         Me.ExitBttn.TabIndex = 6

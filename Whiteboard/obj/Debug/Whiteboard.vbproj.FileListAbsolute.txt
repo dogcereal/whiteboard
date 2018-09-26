@@ -22,3 +22,17 @@ C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboar
 C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.Form2.resources
 C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.Resources.resources
 C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.Cache
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.cache
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.vbproj.CoreCompileInputs.cache
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Student.resources
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Professor.resources
