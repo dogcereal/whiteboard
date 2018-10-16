@@ -34,18 +34,21 @@ Partial Class Login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Stencil", 50.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(110, 18)
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Yu Gothic UI", 50.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.Label1.Location = New System.Drawing.Point(185, 79)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(474, 80)
+        Me.Label1.Size = New System.Drawing.Size(400, 89)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "WHITEBOARD"
+        Me.Label1.Text = "WhiteBoard"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(233, 126)
+        Me.Label2.Location = New System.Drawing.Point(269, 203)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(81, 17)
         Me.Label2.TabIndex = 1
@@ -53,24 +56,27 @@ Partial Class Login
         '
         'Usr
         '
-        Me.Usr.Location = New System.Drawing.Point(320, 126)
+        Me.Usr.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Usr.Location = New System.Drawing.Point(262, 237)
         Me.Usr.Name = "Usr"
-        Me.Usr.Size = New System.Drawing.Size(100, 20)
+        Me.Usr.Size = New System.Drawing.Size(256, 26)
         Me.Usr.TabIndex = 3
         '
         'Psswrd
         '
-        Me.Psswrd.Location = New System.Drawing.Point(320, 165)
+        Me.Psswrd.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Psswrd.Location = New System.Drawing.Point(262, 318)
         Me.Psswrd.Name = "Psswrd"
-        Me.Psswrd.Size = New System.Drawing.Size(100, 20)
+        Me.Psswrd.Size = New System.Drawing.Size(256, 26)
         Me.Psswrd.TabIndex = 4
         Me.Psswrd.UseSystemPasswordChar = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(237, 165)
+        Me.Label3.Location = New System.Drawing.Point(269, 284)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(77, 17)
         Me.Label3.TabIndex = 2
@@ -78,7 +84,7 @@ Partial Class Login
         '
         'LoginBttn
         '
-        Me.LoginBttn.Location = New System.Drawing.Point(261, 207)
+        Me.LoginBttn.Location = New System.Drawing.Point(282, 374)
         Me.LoginBttn.Name = "LoginBttn"
         Me.LoginBttn.Size = New System.Drawing.Size(100, 46)
         Me.LoginBttn.TabIndex = 5
@@ -87,7 +93,7 @@ Partial Class Login
         '
         'ExitBttn
         '
-        Me.ExitBttn.Location = New System.Drawing.Point(376, 207)
+        Me.ExitBttn.Location = New System.Drawing.Point(398, 374)
         Me.ExitBttn.Name = "ExitBttn"
         Me.ExitBttn.Size = New System.Drawing.Size(100, 46)
         Me.ExitBttn.TabIndex = 6
@@ -99,7 +105,8 @@ Partial Class Login
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SeaShell
-        Me.ClientSize = New System.Drawing.Size(699, 274)
+        Me.BackgroundImage = Global.Whiteboard.My.Resources.Resources.login_BG
+        Me.ClientSize = New System.Drawing.Size(807, 504)
         Me.Controls.Add(Me.ExitBttn)
         Me.Controls.Add(Me.LoginBttn)
         Me.Controls.Add(Me.Psswrd)
@@ -107,7 +114,9 @@ Partial Class Login
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
         Me.Name = "Login"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()

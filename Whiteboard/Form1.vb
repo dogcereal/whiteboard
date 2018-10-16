@@ -20,7 +20,7 @@
             Usr.Select()
 
         ElseIf (Usr.Text = "professor" And Psswrd.Text = "password") Then
-            Professor.Show()
+            CourseInfo.Show()
             Me.Hide()
             Usr.Clear()
             Psswrd.Clear()

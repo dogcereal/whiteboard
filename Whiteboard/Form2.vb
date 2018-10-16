@@ -3,4 +3,8 @@
         Me.Close()
         Login.Show()
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles PageTitle.Click
+
+    End Sub
 End Class
