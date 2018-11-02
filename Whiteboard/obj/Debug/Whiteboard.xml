@@ -22,5 +22,15 @@ Whiteboard
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Whiteboard.My.Resources.Resources.login_BG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Whiteboard.My.Resources.Resources.Student_BG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

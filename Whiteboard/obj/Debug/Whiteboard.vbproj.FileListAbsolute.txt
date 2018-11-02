@@ -36,3 +36,16 @@ C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.xml
 C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.pdb
 C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Student.resources
 C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Professor.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.Student.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.Admin.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.Cache
