@@ -24,15 +24,14 @@ Partial Class Student
     Private Sub InitializeComponent()
         Me.tabControl1 = New System.Windows.Forms.TabControl()
         Me.homeTab = New System.Windows.Forms.TabPage()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.courseTab = New System.Windows.Forms.TabPage()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.gradeTab = New System.Windows.Forms.TabPage()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.tabControl1.SuspendLayout()
         Me.homeTab.SuspendLayout()
         Me.courseTab.SuspendLayout()
@@ -62,10 +61,20 @@ Partial Class Student
         Me.homeTab.Text = "Home"
         Me.homeTab.UseVisualStyleBackColor = True
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(6, 13)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(212, 33)
+        Me.Label3.TabIndex = 0
+        Me.Label3.Text = "Announcements"
+        '
         'courseTab
         '
         Me.courseTab.Controls.Add(Me.Label2)
-        Me.courseTab.Controls.Add(Me.ComboBox1)
         Me.courseTab.Location = New System.Drawing.Point(4, 22)
         Me.courseTab.Name = "courseTab"
         Me.courseTab.Padding = New System.Windows.Forms.Padding(3)
@@ -74,9 +83,20 @@ Partial Class Student
         Me.courseTab.Text = "Courses"
         Me.courseTab.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(7, 12)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(161, 33)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "My Courses"
+        '
         'gradeTab
         '
-        Me.gradeTab.Controls.Add(Me.ComboBox2)
+        Me.gradeTab.Controls.Add(Me.Button2)
         Me.gradeTab.Controls.Add(Me.Label4)
         Me.gradeTab.Location = New System.Drawing.Point(4, 22)
         Me.gradeTab.Name = "gradeTab"
@@ -85,6 +105,17 @@ Partial Class Student
         Me.gradeTab.TabIndex = 2
         Me.gradeTab.Text = "Grades"
         Me.gradeTab.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(7, 12)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(148, 33)
+        Me.Label4.TabIndex = 0
+        Me.Label4.Text = "My Grades"
         '
         'Button1
         '
@@ -105,56 +136,14 @@ Partial Class Student
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "WhiteBoard"
         '
-        'ComboBox1
+        'Button2
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(7, 48)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 0
-        Me.ComboBox1.Text = "Select Course"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(7, 12)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(161, 33)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "My Courses"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 13)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(212, 33)
-        Me.Label3.TabIndex = 0
-        Me.Label3.Text = "Announcements"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(7, 12)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(148, 33)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "My Grades"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(7, 48)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 1
-        Me.ComboBox2.Text = "Select Course"
+        Me.Button2.Location = New System.Drawing.Point(333, 328)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(89, 23)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Calculate GPA"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Student
         '
@@ -186,7 +175,6 @@ Partial Class Student
     Friend WithEvents Label1 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents Button2 As Button
 End Class

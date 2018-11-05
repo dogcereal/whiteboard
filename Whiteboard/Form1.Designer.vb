@@ -29,6 +29,7 @@ Partial Class Login
         Me.Label3 = New System.Windows.Forms.Label()
         Me.LoginBttn = New System.Windows.Forms.Button()
         Me.ExitBttn = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -97,8 +98,17 @@ Partial Class Login
         Me.ExitBttn.Name = "ExitBttn"
         Me.ExitBttn.Size = New System.Drawing.Size(100, 46)
         Me.ExitBttn.TabIndex = 6
-        Me.ExitBttn.Text = "Exit"
+        Me.ExitBttn.Text = "Register"
         Me.ExitBttn.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(409, 358)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(78, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "New Student ?"
         '
         'Login
         '
@@ -107,6 +117,7 @@ Partial Class Login
         Me.BackColor = System.Drawing.Color.SeaShell
         Me.BackgroundImage = Global.Whiteboard.My.Resources.Resources.login_BG
         Me.ClientSize = New System.Drawing.Size(807, 504)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ExitBttn)
         Me.Controls.Add(Me.LoginBttn)
         Me.Controls.Add(Me.Psswrd)
@@ -130,4 +141,5 @@ Partial Class Login
     Friend WithEvents Label3 As Label
     Friend WithEvents LoginBttn As Button
     Friend WithEvents ExitBttn As Button
+    Friend WithEvents Label4 As Label
 End Class

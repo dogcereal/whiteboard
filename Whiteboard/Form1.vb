@@ -7,9 +7,6 @@
 
     End Sub
 
-    Private Sub ExitBttn_Click(sender As Object, e As EventArgs) Handles ExitBttn.Click
-        Me.Close()
-    End Sub
 
     Private Sub LoginBttn_Click(sender As Object, e As EventArgs) Handles LoginBttn.Click
         If (Usr.Text = "student" And Psswrd.Text = "password") Then
