@@ -3,4 +3,8 @@
         Me.Close()
         Login.Show()
     End Sub
+
+    Private Sub courseTab_Click(sender As Object, e As EventArgs) Handles courseTab.Click
+
+    End Sub
 End Class

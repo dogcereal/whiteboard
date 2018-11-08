@@ -104,11 +104,15 @@ Partial Class Login
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(409, 358)
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.Highlight
+        Me.Label4.Location = New System.Drawing.Point(413, 358)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 13)
+        Me.Label4.Size = New System.Drawing.Size(75, 13)
         Me.Label4.TabIndex = 7
-        Me.Label4.Text = "New Student ?"
+        Me.Label4.Text = "New Student?"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Login
         '
@@ -116,6 +120,7 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SeaShell
         Me.BackgroundImage = Global.Whiteboard.My.Resources.Resources.login_BG
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(807, 504)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ExitBttn)
