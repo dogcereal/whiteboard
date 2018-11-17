@@ -2,11 +2,10 @@
 Imports System.Data.SQLite
 
 Public Class Login
-    Private connectionString As String = String.Empty
+    Public db As New DBConnection
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        connectionString = String.Format("Data Source={0};Version=3;",
-                                        Directory.GetCurrentDirectory() & "\" & "LMS.db")
+
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -25,6 +24,7 @@ Public Class Login
             Usr.Clear()
             Psswrd.Clear()
             Usr.Select()
+
         Else
             MsgBox("Incorrect username/password")
         End If
@@ -37,7 +37,7 @@ Public Class Login
         Dim query As String = "SELECT * FROM student WHERE sUsername = @username"
 
         Try
-            Using conn As New SQLiteConnection(connectionString.ToString)
+            Using conn As New SQLiteConnection(db.connectionString.ToString)
                 Using cmd As New SQLiteCommand(conn)
                     cmd.Parameters.AddWithValue("@username", username)
                     cmd.CommandText = query
@@ -70,6 +70,7 @@ Public Class Login
         LoginBttn.DialogResult = System.Windows.Forms.DialogResult.OK
 
     End Sub
+
 
 
 End Class
