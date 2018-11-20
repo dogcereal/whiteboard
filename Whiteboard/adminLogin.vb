@@ -1,27 +1,24 @@
-﻿Imports System.IO
-Imports System.Data.SQLite
+﻿Imports System.Data.SQLite
+Imports System.IO
 
-Public Class Login
-    Public db As New DBConnection
-
-    Private Sub LoginBttn_Click(sender As Object, e As EventArgs) Handles LoginBttn.Click
-        If IsAuthenticated(Usr.Text.Trim, Psswrd.Text.Trim) Then
-            Student.Show()
+Public Class adminLogin
+    Private db As New DBConnection
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If IsAuthenticated(adminUser.Text.Trim, adminPass.Text.Trim) Then
+            Admin.Show()
             Me.Hide()
-            Usr.Clear()
-            Psswrd.Clear()
-            Usr.Select()
-
+            adminUser.Clear()
+            adminPass.Clear()
+            adminUser.Select()
         Else
             MsgBox("Incorrect username/password")
         End If
-
     End Sub
 
     Private Function IsAuthenticated(username As String, password As String) As Boolean
         Dim IsValidUser As Boolean = False
         Dim userInfo As DataRow = Nothing
-        Dim query As String = "SELECT * FROM student WHERE sUsername = @username"
+        Dim query As String = "SELECT * FROM admin WHERE adUser = @username"
 
         Try
             Using conn As New SQLiteConnection(db.connectionString.ToString)
@@ -34,7 +31,7 @@ Public Class Login
                         da.Fill(dt)
                         If dt.Rows.Count > 0 Then
                             userInfo = dt.Rows(0)
-                            If userInfo("sPass").Equals(password) Then
+                            If userInfo("adPass").Equals(password) Then
                                 IsValidUser = True
                             End If
                         End If
@@ -47,19 +44,8 @@ Public Class Login
         Return IsValidUser
     End Function
 
-
-    Private Sub Usr_TextChanged(sender As Object, e As EventArgs) Handles Usr.TextChanged
-        Usr.Focus()
-    End Sub
-
-    Private Sub Psswrd_TextChanged(sender As Object, e As EventArgs) Handles Psswrd.TextChanged
-        Me.AcceptButton = LoginBttn
-        LoginBttn.DialogResult = System.Windows.Forms.DialogResult.OK
-
-    End Sub
-
-    Private Sub ExitBttn_Click(sender As Object, e As EventArgs) Handles ExitBttn.Click
-        adminLogin.Show()
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Login.Show()
         Me.Hide()
     End Sub
 End Class

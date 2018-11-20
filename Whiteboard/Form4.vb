@@ -1,5 +1,3 @@
-﻿Public Class Form4
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+﻿Public Class AdminLogin
 
-    End Sub
 End Class
