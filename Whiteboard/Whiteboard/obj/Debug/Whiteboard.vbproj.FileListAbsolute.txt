@@ -1,0 +1,74 @@
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.Cache
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\Miguel\AppData\Local\Temporary Projects\Whiteboard\obj\Debug\Whiteboard.Form2.resources
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.Form2.resources
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\Miguel\Documents\UHD\Computer science\visual basic\Whiteboard\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.Cache
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.cache
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.vbproj.CoreCompileInputs.cache
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Student.resources
+C:\Users\migue\Source\Repos\whiteboard\Whiteboard\obj\Debug\Whiteboard.Professor.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.Student.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.Admin.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\Miguel\Source\Repos\whiteboard3\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.Cache
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\Whiteboard.exe.config
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.exe
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.xml
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.pdb
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.vbprojResolveAssemblyReference.cache
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.Login.resources
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.Student.resources
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.Admin.resources
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.Resources.resources
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.vbproj.GenerateResource.Cache
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\Whiteboard.exe
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\Whiteboard.pdb
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\Whiteboard.xml
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\EntityFramework.dll
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\System.Data.SQLite.dll
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\EntityFramework.xml
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\bin\Debug\System.Data.SQLite.xml
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.AdminLogin.resources
+C:\Users\Mike\Source\Repos\whiteboard2\Whiteboard\obj\Debug\Whiteboard.Form5.resources
