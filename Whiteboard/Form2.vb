@@ -5,7 +5,9 @@ Imports System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder
 Public Class Student
     Public classId As String = Nothing
     Dim MyLabel() As LinkLabel
+    Dim MyLabels() As Label
     Private db As New DBConnection
+    Public studentId As Integer = Nothing
     Public Sub Student_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblDisplayUserInfo.Text = Login.Usr.Text()
         If db.HasConnection() Then
@@ -14,7 +16,10 @@ Public Class Student
             End If
             db.RunQuery("SELECT sName AS name, studentId AS id FROM student WHERE sUsername='" & Login.Usr.Text & "' ")
             name_id.Text = String.Format("Student Name: " & CType(db.SQLDS.Tables(0).Rows(0).Item("name"), String) & "     ID: " & CType(db.SQLDS.Tables(0).Rows(0).Item("id"), String))
+            studentId = CType(db.SQLDS.Tables(0).Rows(0).Item("id"), Integer)
         End If
+        Announcements()
+        GradeForClass()
         DynamicLabels()
     End Sub
 
@@ -24,6 +29,33 @@ Public Class Student
 
     End Sub
 
+    Sub Announcements()
+        Dim i As Integer
+        Dim x As Integer = 5
+        Dim y As Integer = 50
+        Dim tp As TabPage = tabControl1.TabPages(0)
+        If db.HasConnection() Then
+            If db.SQLDS IsNot Nothing Then
+                db.SQLDS.Clear()
+            End If
+            db.RunQuery("SELECT DISTINCT c.className, a.message 
+                        FROM announcements a, classroom_student, classroom c
+                        WHERE c.classId=a.classId AND student_id ='" & studentId & "'")
+            For i = 0 To db.SQLDS.Tables(0).Rows.Count - 1
+                ReDim MyLabels(db.SQLDS.Tables(0).Rows.Count)
+                y += 50
+                With MyLabels(i)
+                    MyLabels(i) = New Label()
+                    MyLabels(i).Name = i.ToString
+                    MyLabels(i).Location = New Point(x, y)
+                    MyLabels(i).Size = New Size(700, 40)
+                    MyLabels(i).Font = New Font("Microsoft Sans Serif", 14)
+                    MyLabels(i).Text = String.Format(CType(db.SQLDS.Tables(0).Rows(i).Item("className"), String) & ": " & CType(db.SQLDS.Tables(0).Rows(i).Item("message"), String))
+                End With
+                tp.Controls.Add(MyLabels(i))
+            Next
+        End If
+    End Sub
 
     Sub DynamicLabels()
         Dim i As Integer
@@ -54,6 +86,9 @@ Public Class Student
         End If
     End Sub
 
+    Sub GradeForClass()
+
+    End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles lblDisplayUserInfo.Click
 
@@ -73,4 +108,7 @@ Public Class Student
         Me.Hide()
     End Sub
 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
 End Class
