@@ -3,9 +3,11 @@ Imports System.Data.SQLite
 Imports System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder
 
 Public Class Student
+    Dim GPA As Double = 0
     Public classId As String = Nothing
     Dim MyLabel() As LinkLabel
     Dim MyLabels() As Label
+    Dim GradeLabel() As Label
     Private db As New DBConnection
     Public studentId As Integer = Nothing
     Public Sub Student_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -86,8 +88,62 @@ Public Class Student
         End If
     End Sub
 
-    Sub GradeForClass()
+    Private Function LetterGrade(avg As Integer) As String
+        If avg > 90 Then
+            Return "A"
+        ElseIf avg > 80 Then
+            Return "B"
+        ElseIf avg > 70 Then
+            Return "C"
+        ElseIf avg > 60 Then
+            Return "D"
+        Else
+            Return "F"
+        End If
+    End Function
 
+
+    Sub GradeForClass()
+        Dim i As Integer
+        Dim x As Integer = 14
+        Dim y As Integer = 50
+        Dim tp As TabPage = tabControl1.TabPages(2)
+        If db.HasConnection() Then
+            If db.SQLDS IsNot Nothing Then
+                db.SQLDS.Clear()
+            End If
+            db.RunQuery("SELECT classroom_id AS id, courseSubj AS sub, courseNum AS num
+                        FROM classroom_student
+                        INNER JOIN classRoom on classroom_student.classroom_id=classRoom.classId
+                        INNER JOIN course on classroom.course_id=course.courseId
+                        WHERE student_id='" & studentId & "'")
+            Dim ClassArr(db.SQLDS.Tables(0).Rows.Count) As Integer
+            Dim SubjectArr(db.SQLDS.Tables(0).Rows.Count) As String
+            Dim CourseArr(db.SQLDS.Tables(0).Rows.Count) As String
+            For i = 0 To db.SQLDS.Tables(0).Rows.Count - 1
+                ClassArr(i) = CType(db.SQLDS.Tables(0).Rows(i).Item("id"), Integer)
+                SubjectArr(i) = CType(db.SQLDS.Tables(0).Rows(i).Item("sub"), String)
+                CourseArr(i) = CType(db.SQLDS.Tables(0).Rows(i).Item("num"), String)
+            Next
+            db.SQLDS.Clear()
+            For i = 0 To ClassArr.Length - 2
+                db.SQLDS.Clear()
+                db.RunQuery("SELECT AVG(examScore) AS grade
+                            FROM grades
+                            WHERE student_id='" & studentId & "' AND classroom_id='" & ClassArr(i) & "'")
+                ReDim GradeLabel(ClassArr.Length)
+                y += 50
+                With GradeLabel(i)
+                    GradeLabel(i) = New Label()
+                    GradeLabel(i).Name = i.ToString
+                    GradeLabel(i).Location = New Point(x, y)
+                    GradeLabel(i).Size = New Size(700, 40)
+                    GradeLabel(i).Font = New Font("Microsoft Sans Serif", 14)
+                    GradeLabel(i).Text = String.Format(CType(SubjectArr(i), String) & " " & CType(CourseArr(i), String) & ": " & LetterGrade(CType(db.SQLDS.Tables(0).Rows(0).Item("grade"), Integer)))
+                End With
+                tp.Controls.Add(GradeLabel(i))
+            Next
+        End If
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles lblDisplayUserInfo.Click
@@ -108,7 +164,44 @@ Public Class Student
         Me.Hide()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+    Public Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim i As Integer
+        If db.HasConnection() Then
+            If db.SQLDS IsNot Nothing Then
+                db.SQLDS.Clear()
+            End If
+            db.RunQuery("SELECT classroom.classId AS id, course.courseCredits AS 'credit'
+                        FROM classRoom
+                        INNER JOIN course ON classRoom.course_id=course.courseId
+                        INNER JOIN classroom_student ON classroom.classId=classroom_student.classroom_id
+                        WHERE classroom_student.student_id='" & studentId & "'")
+            Dim Credit(db.SQLDS.Tables(0).Rows.Count - 1) As Integer
+            Dim ClassId(db.SQLDS.Tables(0).Rows.Count - 1) As Double
+            Dim Grades(db.SQLDS.Tables(0).Rows.Count - 1) As Double
+            Dim Score(db.SQLDS.Tables(0).Rows.Count - 1) As Double
+            Dim SumScores As Double = 0
+            Dim SumCredits As Double = 0
+            For i = 0 To db.SQLDS.Tables(0).Rows.Count - 1
+                Credit(i) = CType(db.SQLDS.Tables(0).Rows(0).Item("credit"), Integer)
+                ClassId(i) = CType(db.SQLDS.Tables(0).Rows(i).Item("id"), Double)
+            Next
+            db.SQLDS.Clear()
+            For i = 0 To ClassId.Length - 1
+                db.SQLDS.Clear()
+                db.RunQuery("SELECT AVG(examScore) AS score
+                            FROM grades
+                            WHERE student_id='" & studentId & "' AND classroom_id='" & ClassId(i) & "'")
+                Grades(i) = CType(db.SQLDS.Tables(0).Rows(i).Item("score"), Double)
+            Next
+            For i = 0 To ClassId.Length - 1
+                Score(i) = (Grades(i) * 0.04) * Credit(i)
+            Next
+            For i = 0 To ClassId.Length - 1
+                SumScores += Score(i)
+                SumCredits += Credit(i)
+            Next
+            GPA = (SumScores) / (SumCredits)
+        End If
+        MsgBox("Current GPA: " & CType(GPA, String))
     End Sub
 End Class
