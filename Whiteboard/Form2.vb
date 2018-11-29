@@ -10,6 +10,7 @@ Public Class Student
     Dim GradeLabel() As Label
     Private db As New DBConnection
     Public studentId As Integer = Nothing
+    'Loads all components according to Sudent's entered credentials
     Public Sub Student_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblDisplayUserInfo.Text = Login.Usr.Text()
         If db.HasConnection() Then
@@ -30,7 +31,7 @@ Public Class Student
         Login.Show()
 
     End Sub
-
+    'Loads announcements from database
     Sub Announcements()
         Dim i As Integer
         Dim x As Integer = 5
@@ -58,7 +59,7 @@ Public Class Student
             Next
         End If
     End Sub
-
+    'Creates labels according to courses taken by student
     Sub DynamicLabels()
         Dim i As Integer
         Dim x As Integer = 14
@@ -191,7 +192,7 @@ Public Class Student
                 db.RunQuery("SELECT AVG(examScore) AS score
                             FROM grades
                             WHERE student_id='" & studentId & "' AND classroom_id='" & ClassId(i) & "'")
-                Grades(i) = CType(db.SQLDS.Tables(0).Rows(i).Item("score"), Double)
+                Grades(i) = CType(db.SQLDS.Tables(0).Rows(0).Item("score"), Integer)
             Next
             For i = 0 To ClassId.Length - 1
                 Score(i) = (Grades(i) * 0.04) * Credit(i)

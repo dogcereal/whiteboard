@@ -17,7 +17,7 @@ Public Class Login
         End If
 
     End Sub
-
+    'Returns true if credentials match database
     Private Function IsAuthenticated(username As String, password As String) As Boolean
         Dim IsValidUser As Boolean = False
         Dim userInfo As DataRow = Nothing
