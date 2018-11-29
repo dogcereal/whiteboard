@@ -88,7 +88,7 @@ Partial Class Student
         Me.courseTab.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.courseTab.Name = "courseTab"
         Me.courseTab.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.courseTab.Size = New System.Drawing.Size(1200, 681)
+        Me.courseTab.Size = New System.Drawing.Size(1194, 681)
         Me.courseTab.TabIndex = 1
         Me.courseTab.Text = "Courses"
         Me.courseTab.UseVisualStyleBackColor = True
@@ -114,7 +114,7 @@ Partial Class Student
         Me.gradeTab.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.gradeTab.Name = "gradeTab"
         Me.gradeTab.Padding = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.gradeTab.Size = New System.Drawing.Size(1200, 681)
+        Me.gradeTab.Size = New System.Drawing.Size(1194, 681)
         Me.gradeTab.TabIndex = 2
         Me.gradeTab.Text = "Grades"
         Me.gradeTab.UseVisualStyleBackColor = True

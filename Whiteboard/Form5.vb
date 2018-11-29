@@ -42,8 +42,8 @@ Public Class Form5
             If db.SQLDS IsNot Nothing Then
                 db.SQLDS.Clear()
             End If
-            db.RunQuery("SELECT * FROM announcements
-                        WHERE classId ='" & Student.classId & "'")
+            db.RunQuery("SELECT * FROM assignments
+                        WHERE class_id ='" & Student.classId & "'")
             For i = 0 To db.SQLDS.Tables(0).Rows.Count - 1
                 ReDim MyLabels(db.SQLDS.Tables(0).Rows.Count)
                 y += 50
@@ -53,7 +53,7 @@ Public Class Form5
                     MyLabels(i).Location = New Point(x, y)
                     MyLabels(i).Size = New Size(700, 40)
                     MyLabels(i).Font = New Font("Microsoft Sans Serif", 14)
-                    MyLabels(i).Text = String.Format(CType(db.SQLDS.Tables(0).Rows(i).Item("message"), String))
+                    MyLabels(i).Text = String.Format(CType(db.SQLDS.Tables(0).Rows(i).Item("assignment"), String))
                 End With
                 tp.Controls.Add(MyLabels(i))
             Next
